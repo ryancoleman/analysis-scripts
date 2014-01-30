@@ -274,3 +274,17 @@ def cohenEffectSize(list1, list2):
       math.sqrt( \
           ((sizeX - 1) * stdDevX ** 2.0 + (sizeY - 1) * stdDevY ** 2.0)/2. )
   return cohenD
+
+def statisticalPower(list1, list2):
+  '''assumes alpha=0.05, beta=0.2 and calculates cohend & 
+  then uses 2*stddev^2 (.84-1.96/2)^2/cohenD^2 to calculate
+  necessary sample size. easiest formula i could find, happy to get a better
+  one to use!'''
+  meanX = computeMean(list1)
+  meanY = computeMean(list2)
+  stdDevX = computeStdDev(list1, meanX)
+  stdDevY = computeStdDev(list2, meanY)
+  meanStdDev = computeMean([stdDevX, stdDevY])
+  cohenD = cohenEffectSize(list1, list2)
+  samplePower = ((2*meanStdDev**2.0)*((.84+1.96/2.)**2.0))/(cohenD**2.0)
+  return samplePower

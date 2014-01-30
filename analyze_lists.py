@@ -23,8 +23,9 @@ def analyzelists(fileNames, numTests=1000000):
   diffMean, pVal1, pVal2 = statistics.pvalueDiffMeansLazy(lists[0], lists[1], \
       numTests)  
   cohenD = statistics.cohenEffectSize(lists[0], lists[1])
-  print "diffMean, pVal1, pVal2, cohenD"
-  print diffMean, pVal1, pVal2, cohenD
+  power = statistics.statisticalPower(lists[0], lists[1])
+  print "diffMean, pVal1, pVal2, cohenD, powerSampleSize"
+  print diffMean, pVal1, pVal2, cohenD, power
 
 #this is main
 if -1 != string.find(sys.argv[0], "analyze_lists.py"): 
