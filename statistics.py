@@ -285,6 +285,5 @@ def statisticalPower(list1, list2):
   stdDevX = computeStdDev(list1, meanX)
   stdDevY = computeStdDev(list2, meanY)
   meanStdDev = computeMean([stdDevX, stdDevY])
-  cohenD = cohenEffectSize(list1, list2)
-  samplePower = ((2*meanStdDev**2.0)*((.84+1.96/2.)**2.0))/(cohenD**2.0)
+  samplePower = ((2*meanStdDev**2.0)*((.84+1.96/2.)**2.0))/((meanX-meanY)**2.0)
   return samplePower
