@@ -273,7 +273,7 @@ def cohenEffectSize(list1, list2):
   cohenD = (meanX - meanY) * math.sqrt(sizeX + sizeY - 2) / \
       math.sqrt( \
           ((sizeX - 1) * stdDevX ** 2.0 + (sizeY - 1) * stdDevY ** 2.0)/2. )
-  return math.abs(cohenD)
+  return abs(cohenD)
 
 def statisticalPower(list1, list2):
   '''assumes alpha=0.05, beta=0.2 and calculates cohend & 
