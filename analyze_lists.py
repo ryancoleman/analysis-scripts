@@ -31,3 +31,5 @@ def analyzelists(fileNames, numTests=1000000):
 if -1 != string.find(sys.argv[0], "analyze_lists.py"): 
   if len(sys.argv) > 1:
     analyzelists(sys.argv[1:])
+  else:
+    print "usage: analyze_lists.py list1.txt list2.txt"
