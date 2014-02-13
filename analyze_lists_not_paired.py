@@ -6,7 +6,7 @@ import pdb, sys, string, math
 import random #for pvalue tests
 import statistics 
 
-def analyzelists(fileNames, numTests=1000000):
+def analyzelistsunpaired(fileNames, numTests=1000000):
   '''somehow these files encode 2 matching lists. either one file with 2 columns
   or 2 files with one column each. or something.
   if there is only one value for one list, replicate it to the length of the
@@ -30,4 +30,6 @@ def analyzelists(fileNames, numTests=1000000):
 #this is main
 if -1 != string.find(sys.argv[0], "analyze_lists_not_paired.py"): 
   if len(sys.argv) > 1:
-    analyzelists(sys.argv[1:])
+    analyzelistsunpaired(sys.argv[1:])
+  else:
+    print "usage: analyze_lists_not_paired.py list1.txt list2.txt"
