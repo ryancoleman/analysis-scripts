@@ -16,3 +16,19 @@ http://core.ecu.edu/psyc/wuenschk/docs30/Nonparametric-EffectSize.docx
 http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U
 
 Would love comments on this
+
+
+The p-value computation was used in: 
+
+Ryan G. Coleman, Kim A. Sharp. Shape and evolution of thermostable 
+protein structure. Proteins: Structure, Function, and Bioinformatics. 
+78(2). pp. 420-433. 1 February 2010. 
+http://dx.doi.org/10.1002/prot.22558
+
+The p-value computation & Cohen Effect Size was used in:
+SAMPL4 & DOCK3. 7: lessons for automated docking procedures
+RG Coleman, T Sterling, DR Weiss
+Journal of computer-aided molecular design
+http://link.springer.com/article/10.1007/s10822-014-9722-6
+
+
