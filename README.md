@@ -1,6 +1,8 @@
 analysis-scripts
 ================
 
+[![doi](https://zenodo.org/badge/3853/ryancoleman/analysis-scripts.png)](http://dx.doi.org/10.5281/zenodo.10216)
+
 Some simple scripts for analyzing lists of data, both paired &amp; unpaired. 
 
 Input files are just lists of numbers, one per line
